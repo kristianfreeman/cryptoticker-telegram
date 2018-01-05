@@ -59,8 +59,6 @@ const parseMsg = (msg) => {
               const message = lines.join("\n")
               bot.sendMessage(id, message, { parse_mode: 'HTML' })
             })
-        } else {
-          bot.sendMessage(id, `Couldn't find ${match}, sorry!`)
         }
       })
     }
