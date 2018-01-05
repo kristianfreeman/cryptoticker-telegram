@@ -46,7 +46,7 @@ const parseMsg = (msg) => {
           cc.priceFull(foundTicker.Symbol, ['USD', 'BTC'])
             .then(resp => {
               const prices = resp[foundTicker.Symbol]
-              const url = ['https://cryptocompare.com', foundTicker.Url].join('/')
+              const url = ['https://cryptocompare.com', foundTicker.Url].join('')
               const lines = [
                 `<b>${foundTicker.Name}</b>`,
                 `Symbol: ${foundTicker.Symbol}`,
