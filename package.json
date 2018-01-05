@@ -4,6 +4,7 @@
   "description": "A Telegram bot for looking up crypto assets from CoinMarketCap, in-chat",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/imkmf/cryptoticker-telegram/issues"
   },
-  "homepage": "https://github.com/imkmf/cryptoticker-telegram#readme"
+  "homepage": "https://github.com/imkmf/cryptoticker-telegram#readme",
+  "dependencies": {
+    "coinmarketcap": "^0.2.0"
+  }
 }

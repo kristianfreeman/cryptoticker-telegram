@@ -2,3 +2,6 @@
 # yarn lockfile v1
 
 
+coinmarketcap@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/coinmarketcap/-/coinmarketcap-0.2.0.tgz#4463108f1ec99e349b2f26433a6d335da8ecf99a"
