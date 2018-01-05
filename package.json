@@ -1,7 +1,7 @@
 {
   "name": "cryptoticker-telegram",
-  "version": "1.0.0",
-  "description": "A Telegram bot for looking up crypto assets from CoinMarketCap, in-chat",
+  "version": "1.1.0",
+  "description": "A Telegram bot for looking up crypto assets, inside of chat",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -26,10 +26,11 @@
   },
   "homepage": "https://github.com/imkmf/cryptoticker-telegram#readme",
   "dependencies": {
-    "coinmarketcap": "^0.2.0",
+    "cryptocompare": "^0.3.0",
     "dotenv": "^4.0.0",
     "lodash": "^4.17.4",
     "node-fetch": "^1.7.3",
-    "node-telegram-bot-api": "^0.30.0"
+    "node-telegram-bot-api": "^0.30.0",
+    "satoshi-bitcoin": "^1.0.4"
   }
 }

@@ -1,4 +1,4 @@
-A Telegram bot for getting cryptocurrency values from CoinMarketCap.
+A Telegram bot for getting cryptocurrency values from inside your chats.
 
 ![Preview](https://i.imgur.com/Fxo6drs.png)
 
