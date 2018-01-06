@@ -47,13 +47,13 @@ const parseMsg = (msg) => {
             .then(resp => {
               const prices = resp[foundTicker.Symbol]
               const url = ['https://cryptocompare.com', foundTicker.Url].join('')
-              const lines = [
+              const lines = _.compact([
                 `<b>${foundTicker.Name}</b>`,
                 `Symbol: ${foundTicker.Symbol}`,
                 `USD value: $${prices.USD.PRICE}`,
-                `BTC value (in satoshi): ${sb.toSatoshi(prices.BTC.PRICE)}`,
+                foundTicker.Symbol != 'BTC' ? `BTC value (in satoshi): ${sb.toSatoshi(prices.BTC.PRICE)}` : null,
                 url
-              ]
+              ])
 
               const message = lines.join("\n")
               bot.sendMessage(id, message, { parse_mode: 'HTML' })
