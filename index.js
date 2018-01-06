@@ -52,7 +52,6 @@ const parseMsg = (msg) => {
                 `Symbol: ${foundTicker.Symbol}`,
                 `USD value: $${prices.USD.PRICE}`,
                 `BTC value (in satoshi): ${sb.toSatoshi(prices.BTC.PRICE)}`,
-                `% 24h: ${prices.BTC.CHANGEPCT24HOUR.toPrecision(3)}%`,
                 url
               ]
 
