@@ -7,7 +7,7 @@ const cc = require('cryptocompare')
 const TelegramBot = require('node-telegram-bot-api');
 
 const token = process.env.TELEGRAM_TOKEN
-const stockMatcher = /(\$[\w,]+)\b/g
+const stockMatcher = /(\#[\w,]+)\b/g
 
 const sb = require('satoshi-bitcoin');
 
@@ -31,7 +31,7 @@ getTickers().then(tickers => persistTickers(tickers))
 const parseMsg = (msg) => {
   const { chat, text } = msg
   const { id } = chat
-  if (text.length && text.includes("$")) {
+  if (text.length && text.includes("#")) {
     const match = text.match(stockMatcher)
     if (match) {
       const matches = _.compact(_.uniq(match.map(m => {
