@@ -48,7 +48,7 @@ const parseMsg = (msg) => {
               const prices = resp[foundTicker.Symbol]
               const url = ['https://cryptocompare.com', foundTicker.Url].join('')
               const lines = _.compact([
-                `<b>${foundTicker.Name}</b>`,
+                `<b>${foundTicker.Name}</b> ${match}`,
                 `Symbol: ${foundTicker.Symbol}`,
                 `USD value: $${prices.USD.PRICE}`,
                 foundTicker.Symbol != 'BTC' ? `BTC value (in satoshi): ${sb.toSatoshi(prices.BTC.PRICE)}` : null,
